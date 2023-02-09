@@ -1,0 +1,29 @@
+POST http://localhost:7000/posts
+Content-Type: application/json
+
+{
+  "Title": "My first post",
+  "Content": "Hello world!"
+}
+
+###
+GET http://localhost:7000/posts
+Content-Type: application/json
+
+###
+GET http://localhost:7000/posts/1
+Content-Type: application/json
+
+###
+PUT http://localhost:7000/posts/2
+Content-Type: application/json
+
+{
+  "Title": "My first post updated",
+  "Content": "Hello world!"
+}
+
+###
+DELETE http://localhost:7000/posts/3
+Content-Type: application/json
+
